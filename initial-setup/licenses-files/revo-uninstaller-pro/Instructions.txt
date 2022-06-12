@@ -1,0 +1,3 @@
+01. Install the Revo Uninstaller Pro
+02. Copy revouninstallerpro5.lic to the following directory:
+	C:\ProgramData\VS Revo Group\Revo Uninstaller Pro\ 

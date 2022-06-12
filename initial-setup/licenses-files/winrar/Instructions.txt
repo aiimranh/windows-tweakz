@@ -1,0 +1,3 @@
+01. Install the Winrar
+02. Copy rarreg.key to the following directory:
+	C:\Program Files\WinRAR\ 
