@@ -1,6 +1,6 @@
 # Windows Customization
 ## Recommened:
-01. PowerShell 7+ Install from Microsoft Store
+01. `PowerShell 7+` Install from Microsoft Store
 #
 ## Modules:
 01. TERMINAL-ICONS
