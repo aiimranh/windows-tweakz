@@ -48,7 +48,7 @@
 
 07. <a href="https://efotinis.neocities.org/deskpins/">Deskpins</a>
 
-08. <a href="https://www.kmplayer.com/pc64x">KMPlayerx64</a>
+08. <a href="[https://www.codecguide.com/]">K-Lite Codec Pack</a>
 
 09. <a href="https://www.win-rar.com/start.html?&L=0">Winrar</a>
 
