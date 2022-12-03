@@ -4,7 +4,7 @@
 
 02. <a href="https://apps.microsoft.com/store/detail/myasus/9N7R5S6B0ZZH?hl=en-us&gl=US">MyAsus</a>
 
-## <a href="https://github.com/aiimranh/command-line/blob/main/jupyter-notebook/NvidiaCudaGPUSupport.md">Graphics Drivers</a>
+## <a href="https://github.com/aiimranh/windows-tweakz/blob/main/jupyter-notebook/NvidiaCudaGPUSupport.md">Graphics Drivers</a>
 
 01. <a href="https://www.nvidia.com/en-us/geforce/drivers/">Nvidia Geforce Driver</a>
 
