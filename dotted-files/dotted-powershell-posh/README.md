@@ -8,7 +8,7 @@
 	01. Installation:
 	* `Install-Module -Name Terminal-Icons -Repository PSGallery`
 
-	02. Type `$PROFILE`
+	02. Type `$PROFILE` in Powershell
 
 	03. Added the lines the file : `C:\Users\AIIH\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
 	* `Import-Module -Name Terminal-Icons`
@@ -26,6 +26,13 @@
 	* `Set-PSReadLineOption -PredictionViewStyle ListView`
 	* `Set-PSReadLineOption -PredictionViewStyle InlineView`
 
-03. Install `oh my posh` and follow the offical websites
+03. Install [oh my posh](https://ohmyposh.dev/) and follow the offical websites
+
+	01. Copy `powerlevel10k_rainbow.omp.json` to `C:\Users\AIIH\AppData\Local\Programs\oh-my-posh\themes\`
+
+	02. Type `$PROFILE` in Powershell
+
+	02. Added the below line in the file : `C:\Users\AIIH\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
+	* `oh-my-posh init pwsh --config "C:\Users\AIIH\AppData\Local\Programs\oh-my-posh\themes\powerlevel10k_rainbow.omp.json" | Invoke-Expression`
 
 #
