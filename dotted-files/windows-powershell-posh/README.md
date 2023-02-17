@@ -51,17 +51,16 @@
 
 	A. Installation:
 	- Powershell Command
-
-		`Install-Module -Name PSReadLine -AllowPrerelease`
+	```code
+	Install-Module PSReadLine -Force
+	```
 
 	B. Create a Profile for `PSReadLine`
 
     - Powershell Command
 
 		`notepad $PROFILE`
-    - Adding the line 
-
-		`Import-Module PSReadLine`
+    - Adding any line of below code.
 
 		`Set-PSReadLineOption -EditMode Windows`
 
