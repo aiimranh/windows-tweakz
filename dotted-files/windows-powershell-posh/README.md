@@ -1,4 +1,7 @@
 # PowerShell + Oh My Posh
+## Final Look:
+![screenshot_of_powershell](./PowerShell.png)
+#
 
 ## Recommened:
 01. `PowerShell 7+` Install from Microsoft Store
