@@ -1,7 +1,6 @@
 # Uninstall Optional Features
 Get-WindowsPackage -Online | Where PackageName -like *InternetExplorer* | Remove-WindowsPackage -Online -NoRestart
 Get-WindowsPackage -Online | Where PackageName -like *Math* | Remove-WindowsPackage -Online -NoRestart
-Get-WindowsPackage -Online | Where PackageName -like *Step* | Remove-WindowsPackage -Online -NoRestart
 
 # Uninstall default Microsoft applications
 Get-AppxPackage "Microsoft.3DBuilder"-AllUsers | Remove-AppxPackage -AllUsers
@@ -43,37 +42,23 @@ Get-AppxPackage "9E2F88E3.Twitter" -AllUsers | Remove-AppxPackage -AllUsers
 Get-AppxPackage "A278AB0D.DisneyMagicKingdoms" -AllUsers | Remove-AppxPackage -AllUsers
 Get-AppxPackage "SpotifyAB.SpotifyMusic" -AllUsers | Remove-AppxPackage -AllUsers
 Get-AppxPackage "Facebook.Facebook" -AllUsers | Remove-AppxPackage -AllUsers
-Get-AppBackgroundTask "Microsoft.XboxIdentityProvider" | Remove-AppPackage
+Get-AppBackgroundTask "Microsoft.XboxIdentityProvider" -AllUsers | Remove-AppPackage -AllUsers
 
 
 # Services
 $services = @(
     "diagnosticshub.standardcollector.service" # Microsoft (R) Diagnostics Hub Standard Collector Service
     "DiagTrack"                                # Diagnostics Tracking Service
-    "dmwappushservice"                         # WAP Push Message Routing Service (see known issues)
-    # "lfsvc"                                  # Geolocation Service
     "MapsBroker"                               # Downloaded Maps Manager
-    "NetTcpPortSharing"                        # Net.Tcp Port Sharing Service
-    # "RemoteAccess"                           # Routing and Remote Access
-    # "RemoteRegistry"                         # Remote Registry
-    # "SharedAccess"                           # Internet Connection Sharing (ICS)
     "TrkWks"                                   # Distributed Link Tracking Client
-    # "WbioSrvc"                               # Windows Biometric Service (required for Fingerprint reader / facial detection)
-    #"WlanSvc"                                 # WLAN AutoConfig
     "WMPNetworkSvc"                            # Windows Media Player Network Sharing Service
-    #"wscsvc"                                  # Windows Security Center Service
-    #"WSearch"                                 # Windows Search
     "XblAuthManager"                           # Xbox Live Auth Manager
     "XblGameSave"                              # Xbox Live Game Save Service
     "XboxNetApiSvc"                            # Xbox Live Networking Service
-    # "ndu"                                    # Windows Network Data Usage Monitor
-
-    # Services which cannot be disabled
-    #"WdNisSvc"
 )
 
 foreach ($service in $services) {
-    Write-Output "Disabling $service"
+    Write-Output "Trying to disable $service"
     Get-Service -Name $service | Set-Service -StartupType Disabled
 }
 
